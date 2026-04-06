@@ -1,16 +1,67 @@
-# React + Vite
+# Splendor Duel – Web Edition 🃏✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A fan-made, browser-based implementation of [Splendor Duel](https://www.spacecowboys-games.com/game/splendor-duel/), the two-player strategy game by Davide Tosello, Marc André, and Bruno Cathala, published by Space Cowboys.
 
-Currently, two official plugins are available:
+This is a passion project built to learn React and modern web development while bringing one of my favorite board games to life online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> ⚠️ **Work in Progress** — Features are being added incrementally. Expect rough edges!
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 About the Project
 
-## Expanding the ESLint configuration
+Splendor Duel is an stragetric boardgame that involves resources management and game states. This web app aims to let players face off with an AI opponent in real time from their browsers — no board, no pieces, no problem. (human player face-off is tbd, for now I want to focus on buiding AI opponent)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The goals of this project are to:
+- Faithfully recreate the rules and feel of Splendor Duel
+- Learn React, JavaScript, and cloud deployment through hands-on building
+- Learn AI involvement games development
+- Host a fully live, playable game 
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React + Vite |
+| Language | JavaScript |
+| Hosting | AWS (TBD: S3 + CloudFront / EC2 / Amplify) |
+| Real-time (planned) | WebSockets / AWS API Gateway |
+| State Management (planned) | TBD |
+
+---
+
+## 🚀 Development Setup
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+)
+- npm or yarn
+
+### Run Locally
+```bash
+# Clone the repository
+git clone https://github.com/nguyennn1212/Splendor-Duel-with-React.git
+cd splendor-duel-with-react
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## ⚖️ Disclaimer
+
+This is a non-commercial fan project made for educational purposes. Splendor Duel is a trademark of Space Cowboys / Asmodee. All rights to the original game belong to their respective owners.
+
+---
+
+## 🙋 About the Developer
+
+@nguyennn1212. Aspiring programmer in the making!
+Feedback and contributions are welcome!
