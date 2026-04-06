@@ -61,7 +61,7 @@ This is a non-commercial fan project made for educational purposes. Splendor Due
 
 ---
 
-## 🙋 About the Developer
+## 🙋🏻‍♀️ About the Developer
 
 **Github**: [@nguyennn1212](https://github.com/nguyennn1212)
 **LinkedIn**: [Ngoc Nguyen](https://www.linkedin.com/in/ngoc-nguyen-3113b127a/)
