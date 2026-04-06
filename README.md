@@ -1,6 +1,6 @@
 # Splendor Duel – Web Edition 🃏✨
 
-> A fan-made, browser-based implementation of [Splendor Duel](https://www.spacecowboys-games.com/game/splendor-duel/), the two-player strategy game by Davide Tosello, Marc André, and Bruno Cathala, published by Space Cowboys.
+A fan-made, browser-based implementation of [Splendor Duel](https://www.spacecowboys-games.com/game/splendor-duel/), the two-player strategy game by Davide Tosello, Marc André, and Bruno Cathala, published by Space Cowboys.
 
 This is a passion project built to learn React and modern web development while bringing one of my favorite board games to life online.
 
@@ -10,7 +10,7 @@ This is a passion project built to learn React and modern web development while 
 
 ## 🎯 About the Project
 
-Splendor Duel is an stragetric boardgame that involves resources management and game states. This web app aims to let players face off with an AI opponent in real time from their browsers — no board, no pieces, no problem. (human player face-off is tbd, for now I want to focus on buiding AI opponent)
+Splendor Duel is an stragetric boardgame that involves resources management and game states. This web app aims to let players face off with an AI opponent in real time from their browsers. (human player face-off is tbd, for now I want to focus on buiding AI opponent)
 
 The goals of this project are to:
 - Faithfully recreate the rules and feel of Splendor Duel
@@ -63,5 +63,8 @@ This is a non-commercial fan project made for educational purposes. Splendor Due
 
 ## 🙋 About the Developer
 
-@nguyennn1212. Aspiring programmer in the making!
+**Github**: [@nguyennn1212](https://github.com/nguyennn1212)
+**LinkedIn**: [Ngoc Nguyen](https://www.linkedin.com/in/ngoc-nguyen-3113b127a/)
+
+Aspiring programmer in the making!
 Feedback and contributions are welcome!
