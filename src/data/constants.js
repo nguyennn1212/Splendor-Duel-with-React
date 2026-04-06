@@ -81,7 +81,8 @@ export const ABILITY = {
     EXTRA_TURN: 'extraTurn',
     MATCHING_TOKEN: 'matchingToken',
     TAKE_PRIVILEDGE: 'takePriviledge',
-    STEAL_GEM: 'stealGem'
+    STEAL_GEM: 'stealGem',
+    TAKE_GEM_TOKEN: 'takeGemToken'
 };
 
 export const NOBLE_REQUIREMENT ={

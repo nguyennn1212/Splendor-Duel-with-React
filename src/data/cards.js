@@ -1,0 +1,479 @@
+import { GEM_COLORS, ABILITY } from "./constants";
+
+export const LEVEL_1_CARDS = [
+    {
+        id : 'L1-B-GM', //level, color, ability to take gem
+        level: 1,
+        color: GEM_COLORS.BLUE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLACK]: 2
+        },
+        bonus: GEM_COLORS.BLUE, //player get a permanent gem bonus of this color
+        hasCrown: false,
+        ability: ABILITY.TAKE_GEM_TOKEN, 
+        imageUrl: '' //Add image later(blue gem card with ability)
+    },
+
+    {
+        id: 'L1-W-GM',
+        level: 1,
+        color: GEM_COLORS.WHITE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 2
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: false,
+        ability: ABILITY.TAKE_GEM_TOKEN,
+        imageUrl: '' //Add image later (white gem card with ability)
+    },
+
+    {
+        id: 'L1-G-GM',
+        level: 1,
+        color: GEM_COLORS.GREEN,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLUE]: 2,
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: false,
+        ability: ABILITY.TAKE_GEM_TOKEN,
+        imageUrl: '' //Add image later (green gem card with ability)
+    },
+
+    {
+        id: 'L1-BLCK-GM',
+        level: 1,
+        color: GEM_COLORS.BLACK,
+        points: 0,
+        cost: {
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.RED]: 2,
+        },
+        bonus: GEM_COLORS.BLACK,
+        hasCrown: false,
+        ability: ABILITY.TAKE_GEM_TOKEN,
+        imageUrl: '' //Add image later (black gem card with ability)
+    },
+    
+    {
+        id: 'L1-R-GM',
+        level: 1,
+        color: GEM_COLORS.RED,
+        points: 0,
+        cost: {
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.GREEN]: 2,
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: false,
+        ability: ABILITY.TAKE_GEM_TOKEN,
+        imageUrl: '' //Add image later (red gem card with ability)
+    },    
+
+    {
+        id: 'L1-B', //level, color, no ability
+        level: 1,
+        color: GEM_COLORS.BLUE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 1,
+            [GEM_COLORS.GREEN]: 1,
+            [GEM_COLORS.RED]: 1,
+            [GEM_COLORS.BLACK]: 1
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //Add image later (lady with blue gem earings)
+    },
+
+    {
+        id: 'L1-W', //level, color, no ability
+        level: 1,
+        color: GEM_COLORS.WHITE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.BLUE]: 1,
+            [GEM_COLORS.GREEN]: 1,
+            [GEM_COLORS.RED]: 1,
+            [GEM_COLORS.BLACK]: 1
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //Add image later (lady with white gem earings)
+    },    
+
+    {
+        id: 'L1-G', //level, color, no ability
+        level: 1,
+        color: GEM_COLORS.GREEN,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 1,
+            [GEM_COLORS.BLUE]: 1,
+            [GEM_COLORS.RED]: 1,
+            [GEM_COLORS.BLACK]: 1
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //Add image later (lady with green gem earings)
+    },
+    
+    {
+        id: 'L1-BLCK', //level, color, no ability
+        level: 1,
+        color: GEM_COLORS.BLACK,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 1,
+            [GEM_COLORS.BLUE]: 1,
+            [GEM_COLORS.GREEN]: 1,
+            [GEM_COLORS.RED]: 1
+        },
+        bonus: GEM_COLORS.BLACK,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //Add image later (lady with black gem earings)
+    },
+
+    {
+        id: 'L1-R', //level, color, no ability
+        level: 1,
+        color: GEM_COLORS.RED,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 1,
+            [GEM_COLORS.BLUE]: 1,
+            [GEM_COLORS.GREEN]: 1,
+            [GEM_COLORS.BLACK]: 1
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //Add image later (lady with red gem earings)
+    },
+    
+    {
+        id: 'L1-B-EXTRTRN', //level, color, ability
+        level: 1,
+        color: GEM_COLORS.BLUE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: false,
+        ability: ABILITY.EXTRA_TURN,
+        imageUrl: '' //add image later (blue gem necklace)
+    },
+ 
+    {
+        id: 'L1-W-EXTRTRN', //level, color, ability
+        level: 1,
+        color: GEM_COLORS.WHITE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: false,
+        ability: ABILITY.EXTRA_TURN,
+        imageUrl: '' //add image later (white gem necklace)
+    },
+    
+    {
+        id: 'L1-G-EXTRTRN', //level, color, ability
+        level: 1,
+        color: GEM_COLORS.GREEN,
+        points: 0,
+        cost: {
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: false,
+        ability: ABILITY.EXTRA_TURN,
+        imageUrl: '' //add image later (green gem necklace)
+    },
+  
+    {
+        id: 'L1-R-EXTRTRN', //level, color, ability
+        level: 1,
+        color: GEM_COLORS.RED,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLACK]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: false,
+        ability: ABILITY.EXTRA_TURN,
+        imageUrl: '' //add image later (red gem necklace)
+    },
+    
+    {
+        id: 'L1-B-C', //level, color, yes crowns
+        level: 1,
+        color: GEM_COLORS.BLUE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.GREEN]: 3
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },        
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (blue gem crown)
+    },
+
+    {
+        id: 'L1-W-C', //level, color, yes crowns
+        level: 1,
+        color: GEM_COLORS.WHITE,
+        points: 0,
+        cost: {
+            [GEM_COLORS.BLUE]: 3
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (white gem crown)
+    },    
+
+    {
+        id: 'L1-G-C', //level, color, yes crowns
+        level: 1,
+        color: GEM_COLORS.GREEN,
+        points: 0,
+        cost: {
+            [GEM_COLORS.RED]: 3
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (green gem crown)
+    },
+
+    {
+        id: 'L1-BLCK-C', //level, color, yes crowns
+        level: 1,
+        color: GEM_COLORS.BLACK,
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 3
+        },
+        bonus: GEM_COLORS.BLACK,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (black gem crown)
+    },
+    
+    {
+        id: 'L1-R-C', //level, color, yes crowns
+        level: 1,
+        color: GEM_COLORS.RED,
+        points: 0,
+        cost: {
+            [GEM_COLORS.BLACK]: 3
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (red gem crown)
+    },
+    
+    {
+        id: 'L1-B-P', //level, color, point
+        level: 1,
+        color: GEM_COLORS.BLUE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 3
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (sword with blue gem)
+    },
+
+    {
+        id: 'L1-B-P', //level, color, point
+        level: 1,
+        color: GEM_COLORS.BLUE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 3
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (sword with blue gem)
+    },
+
+    {
+        id: 'L1-W-P', //level, color, point
+        level: 1,
+        color: GEM_COLORS.WHITE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.RED]: 3
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (sword with white gem)
+    },
+    
+    {
+        id: 'L1-G-P', //level, color, point
+        level: 1,
+        color: GEM_COLORS.GREEN,
+        points: 1,
+        cost: {
+            [GEM_COLORS.WHITE]: 3,
+            [GEM_COLORS.BLACK]: 2
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (sword with green gem)
+    },
+    
+    {
+        id: 'L1-BLCK-P', //level, color, point
+        level: 1,
+        color: GEM_COLORS.BLACK,
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.GREEN]: 3
+        },
+        bonus: GEM_COLORS.BLACK,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (sword with black gem)
+    },
+    
+    {
+        id: 'L1-R-P', //level, color, point
+        level: 1,
+        color: GEM_COLORS.RED,
+        points: 1,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLUE]: 3
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (sword with red gem)
+    },    
+
+    {
+        id: 'L1-C', //level, colorless, crown yes
+        level: 1,
+        color: null, //colorless cards that can be choose to be any colors as long as the player have a card of said color
+        points: 0,
+        cost: {
+            [GEM_COLORS.WHITE]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (hands crafting)
+    },
+
+    {
+        id: 'L1-P-1', //level, colorless, point yes
+        level: 1,
+        color: null, 
+        points: 1,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.BLACK]: 1,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: false,
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (hands crafting)
+    },
+    
+    {
+        id: 'L1-P-2', //level, colorless, point yes
+        level: 1,
+        color: null, 
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 1,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: false,
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (hands crafting)
+    },
+    
+    {
+        id: 'L1-P-3', //level, colorless, point yes
+        level: 1,
+        color: null, 
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLACK]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: false,
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (hands crafting)
+    },
+    
+    {
+        id: 'L1-P', //level, colorless, points card
+        level: 1,
+        color: null,
+        points: 3,
+        cost: {
+            [GEM_COLORS.RED]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (hands refining metal)
+    }
+]
