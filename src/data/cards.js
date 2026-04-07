@@ -476,4 +476,396 @@ export const LEVEL_1_CARDS = [
         ability: ABILITY.NONE,
         imageUrl: '' //add image later (hands refining metal)
     }
-]
+];
+
+export const LEVEL_2_CARDS = [
+    {
+        id: 'L2-B-S', //level, color, ability steal
+        level: 2,
+        color: GEM_COLORS.BLUE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.GREEN]: 4,
+            [GEM_COLORS.BLACK]: 3
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: false,
+        ability: ABILITY.STEAL_GEM,
+        imageUrl: '' //add image later (hand stealing blue ring)
+    },
+
+    {
+        id: 'L2-W-S',
+        level: 2,
+        color: GEM_COLORS.WHITE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLUE]: 4,
+            [GEM_COLORS.RED]: 3
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: false,
+        ability: ABILITY.STEAL_GEM,
+        imageUrl: '' //add image later (hand stealing white ring)
+    },
+ 
+    {
+        id: 'L2-G-S',
+        level: 2,
+        color: GEM_COLORS.GREEN,
+        points: 1,
+        cost: {
+            [GEM_COLORS.RED]: 4,
+            [GEM_COLORS.WHITE]: 3
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: false,
+        ability: ABILITY.STEAL_GEM,
+        imageUrl: '' //add image later (hand stealing green ring)
+    },
+    
+    {
+        id: 'L2-BLCK-S',
+        level: 2,
+        color: GEM_COLORS.BLACK,
+        points: 1,
+        cost: {
+            [GEM_COLORS.WHITE]: 4,
+            [GEM_COLORS.GREEN]: 3
+        },
+        bonus: GEM_COLORS.BLACK,
+        hasCrown: false,
+        ability: ABILITY.STEAL_GEM,
+        imageUrl: '' //add image later (hand stealing black ring)
+    },
+    
+    {
+        id: 'L2-R-S',
+        level: 2,
+        color: GEM_COLORS.RED,
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLACK]: 4,
+            [GEM_COLORS.BLUE]: 3
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: false,
+        ability: ABILITY.STEAL_GEM,
+        imageUrl: '' //add image later (hand stealing red ring)
+    },
+    
+    {
+        id: 'L2-B-P', //level, color, ability priviledge
+        level: 2,
+        color: GEM_COLORS.BLUE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLUE]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: false,
+        ability: ABILITY.TAKE_PRIVILEDGE,
+        imageUrl: '' //add image later (blue S ring)
+    },
+
+    {
+        id: 'L2-W-P',
+        level: 2,
+        color: GEM_COLORS.WHITE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.WHITE]: 4,
+            [GEM_COLORS.BLACK]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: false,
+        ability: ABILITY.TAKE_PRIVILEDGE,
+        imageUrl: '' //add image later (white S ring)
+    },
+
+    {
+        id: 'L2-G-P',
+        level: 2,
+        color: GEM_COLORS.GREEN,
+        points: 2,
+        cost: {
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.GREEN]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: false,
+        ability: ABILITY.TAKE_PRIVILEDGE,
+        imageUrl: '' //add image later (green S ring)
+    },
+    
+    {
+        id: 'L2-BLCK-P',
+        level: 2,
+        color: GEM_COLORS.BLACK,
+        points: 2,
+        cost: {
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.BLACK,
+        hasCrown: false,
+        ability: ABILITY.TAKE_PRIVILEDGE,
+        imageUrl: '' //add image later (black S ring)
+    },
+    
+    {
+        id: 'L2-R-P',
+        level: 2,
+        color: GEM_COLORS.RED,
+        points: 2,
+        cost: {
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.RED]: 4,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: false,
+        ability: ABILITY.TAKE_PRIVILEDGE,
+        imageUrl: '' //add image later (red S ring)
+    },
+    
+    {
+        id: 'L2-B-C', //level, color, crown yes
+        level: 2,
+        color: GEM_COLORS.BLUE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (blue crown in a box)
+    },
+
+    {
+        id: 'L2-W-C', //level, color, crown yes
+        level: 2,
+        color: GEM_COLORS.WHITE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.BLACK]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.WHITE,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (white crown in a box)
+    },
+    
+    {
+        id: 'L2-G-C', //level, color, crown yes
+        level: 2,
+        color: GEM_COLORS.GREEN,
+        points: 2,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.BLACK]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.GREEN,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (green crown in a box)
+    },
+    
+    {
+        id: 'L2-BLCK-C', //level, color, crown yes
+        level: 2,
+        color: GEM_COLORS.BLACK,
+        points: 2,
+        cost: {
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.RED]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.BLUE,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (black crown in a box)
+    },
+    
+    {
+        id: 'L2-R-C', //level, color, crown yes
+        level: 2,
+        color: GEM_COLORS.RED,
+        points: 2,
+        cost: {
+            [GEM_COLORS.WHITE]: 2,
+            [GEM_COLORS.BLUE]: 2,
+            [GEM_COLORS.GREEN]: 2,
+            [GEM_COLORS.PEARL]: 1
+        },
+        bonus: GEM_COLORS.RED,
+        hasCrown: true,
+        crownsParams: {
+            count: 1
+        },
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (red crown in a box)
+    },
+    
+    {
+        id: 'L2-B-GM', //level, color, extra gem
+        level: 2,
+        color: GEM_COLORS.BLUE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.GREEN]: 5,
+            [GEM_COLORS.RED]: 2
+        },
+        bonus: GEM_COLORS.BLUE,
+        bonusParams: {
+            count: 2 //add 2 permanent gems when the player aquire this card
+        },
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (blue rings on hand)
+    },
+
+    {
+        id: 'L2-W-GM', //level, color, extra gem
+        level: 2,
+        color: GEM_COLORS.WHITE,
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLUE]: 5,
+            [GEM_COLORS.GREEN]: 2
+        },
+        bonus: GEM_COLORS.WHITE,
+        bonusParams: {
+            count: 2
+        },
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (white rings on hand)
+    },
+    
+    {
+        id: 'L2-G-GM', //level, color, extra gem
+        level: 2,
+        color: GEM_COLORS.GREEN,
+        points: 1,
+        cost: {
+            [GEM_COLORS.RED]: 5,
+            [GEM_COLORS.BLACK]: 2
+        },
+        bonus: GEM_COLORS.GREEN,
+        bonusParams: {
+            count: 2
+        },
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (green rings on hand)
+    },
+    
+    {
+        id: 'L2-R-GM', //level, color, extra gem
+        level: 2,
+        color: GEM_COLORS.RED,
+        points: 1,
+        cost: {
+            [GEM_COLORS.BLACK]: 5,
+            [GEM_COLORS.WHITE]: 2
+        },
+        bonus: GEM_COLORS.RED,
+        bonusParams: {
+            count: 2
+        },
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (red rings on hand)
+    },
+    
+    {
+        id: 'L2-P-1', //level, colorless, point
+        level: 2,
+        color: GEM_COLORS.NONE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.GREEN]: 6,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: false,
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (making ring)
+    },
+
+    {
+        id: 'L2-C-2', //level, colorless, crowns
+        level: 2,
+        color: GEM_COLORS.NONE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.GREEN]: 6,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: true,
+        crownsParams: {
+            count: 2
+        },
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (making ring)
+    },
+    
+    {
+        id: 'L2-C-3', //level, colorless, crowns
+        level: 2,
+        color: GEM_COLORS.NONE,
+        points: 2,
+        cost: {
+            [GEM_COLORS.BLUE]: 6,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: true,
+        crownsParams: {
+            count: 2
+        },
+        ability: ABILITY.MATCHING_TOKEN,
+        imageUrl: '' //add image later (making ring)
+    },
+    
+    {
+        id: 'L2-P', //level 2, the point card
+        level: 2,
+        color: GEM_COLORS.NONE,
+        points: 5,
+        cost: {
+            [GEM_COLORS.BLUE]: 6,
+            [GEM_COLORS.PEARL]: 1
+        },
+        hasCrown: false,
+        ability: ABILITY.NONE,
+        imageUrl: '' //add image later (making sovereign's orb)
+    }    
+];
+

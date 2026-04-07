@@ -5,7 +5,8 @@ export const GEM_COLORS = {
     BLACK: 'black',
     RED: 'red',
     GOLD: 'gold',
-    PEARL: 'pearl'
+    PEARL: 'pearl',
+    NONE: 'none'
 };
 
 export const GAME_CONFIG = {
