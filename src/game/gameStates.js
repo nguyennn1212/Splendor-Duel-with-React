@@ -1,7 +1,7 @@
 import {GAME_CONFIG, GEM_COLORS, GAME_PHASES, PLAYER_TYPES} from '../data/constants'
 import {LEVEL_1_CARDS, LEVEL_2_CARDS, LEVEL_3_CARDS} from '../data/cards'
 import {ALL_NOBLES} from '../data/nobles'
-import {boardSpiralGenerator} from '../utils/boardSpiralGenerator'
+import {boardSpiralGenerator, generateSpiralCoordinates} from '../utils/boardSpiralGenerator'
 import {shuffleArray} from '../utils/arrayHelpers'
 
 /**
@@ -16,8 +16,8 @@ function generateGemGrid() {
 
     // Create a gem "bank"
     const gemBank = [];
-    for (let color in GAME_CONFIG.GEM_COLORS) {
-        const count = GAME_CONFIG.GEM_COLORS[color];
+    for (let color in GAME_CONFIG.TOTAL_GEMS) {
+        const count = GAME_CONFIG.TOTAL_GEMS[color];
         for (let i = 0; i < count; i++) {
             gemBank.push(color);
         }
@@ -27,7 +27,7 @@ function generateGemGrid() {
     const shuffledGems = shuffleArray(gemBank); 
 
     //Get spiral coordinates
-    const spiralCoords = boardSpiralGenerator(size);
+    const spiralCoords = generateSpiralCoordinates(size);
 
     //place gems based on coordinators
     spiralCoords.forEach((coord, index) => {
@@ -39,8 +39,6 @@ function generateGemGrid() {
 
     return grid;
 }
-
-console.table(generateGemGrid());
 
 /** Create and initial game states when starting a new game */
 
