@@ -10,6 +10,8 @@ export const GEM_COLORS = {
 };
 
 export const GAME_CONFIG = {
+    BOARD_SIZE: 5,
+
     TOTAL_GEMS: {
         [GEM_COLORS.BLUE]: 4,
         [GEM_COLORS.WHITE]: 4,
