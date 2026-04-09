@@ -1111,20 +1111,3 @@ export const LEVEL_3_CARDS = [
         imageUrl: '' //add image later (finish making Sovergein's orb)
     }
 ];
-
-/** Get random cards for a game */
-
-export function getRandomLevel1(count = 5) {
-    const shuffle = [LEVEL_1_CARDS].sort(() => Math.random()-0.5);
-    return shuffle.slice(0, count);
-}
-
-export function getRandomLevel2(count = 4) {
-    const shuffle = [LEVEL_2_CARDS].sort(() => Math.random() - 0.5);
-    return shuffle.slice(0, count);
-}
-
-export function getRandomLevel3(count = 3) {
-    const shuffle = [LEVEL_3_CARDS].sort(() => Math.random() - 0.5);
-    return shuffle.slice(0, count);
-}
