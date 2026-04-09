@@ -43,5 +43,32 @@ function generateGemGrid() {
 /** Create and initial game states when starting a new game */
 
 export function createInitialGameState() {
-    
+    return {
+        board: {
+            gemGrid: generateGemGrid(),
+
+            availableCards: {
+                level1: [],
+                level2: [],
+                level3: []
+            },
+
+            nobles: [ALL_NOBLES],
+
+            priviledgeScrolls: {
+                available: 3
+            }
+        },
+
+        players: [
+            createPlayer(0, 'Player', PLAYER_TYPES.HUMAN),
+            createPlayer(1, 'AI', PLAYER_TYPES.AI)
+        ],
+
+        currentPlayer: 0,
+        turn: 1,
+        phase: GAME_PHASES.ACTIVE,
+        winner: null,
+        moveHistory: []
+    }
 }
