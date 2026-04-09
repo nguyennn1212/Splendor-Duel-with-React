@@ -40,18 +40,34 @@ function generateGemGrid() {
     return grid;
 }
 
-/** Create and initial game states when starting a new game */
+function initializeCardDecks() {
+    return {
+        level1: shuffleArray(LEVEL_1_CARDS),
+        level2: shuffleArray(LEVEL_2_CARDS),
+        level3: shuffleArray(LEVEL_3_CARDS)
+    };
+}
 
+function drawInitalCards(decks) {
+    const availableCards = {
+        level1: decks.level1.splice(0, 5), // Draws 5 level 1 cards
+        level2: decks.level2.splice(0, 4), // Draw 4 level 2 cards
+        level3: decks.level3.splice(0, 3) // Draw 3 level 3 cards
+    };
+
+    return availableCards;
+}
+
+/** Create and initial game states when starting a new game */
 export function createInitialGameState() {
+
+    const decks = initializeCardDecks();
+
     return {
         board: {
             gemGrid: generateGemGrid(),
 
-            availableCards: {
-                level1: [],
-                level2: [],
-                level3: []
-            },
+            availableCards: drawInitalCards(decks),
 
             nobles: [ALL_NOBLES],
 
