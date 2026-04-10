@@ -1,7 +1,7 @@
-import {GAME_CONFIG, GEM_COLORS, GAME_PHASES, PLAYER_TYPES} from '../data/constants'
+import {GAME_CONFIG, GAME_PHASES, PLAYER_TYPES} from '../data/constants'
 import {LEVEL_1_CARDS, LEVEL_2_CARDS, LEVEL_3_CARDS} from '../data/cards'
 import {ALL_NOBLES} from '../data/nobles'
-import {boardSpiralGenerator, generateSpiralCoordinates} from '../utils/boardSpiralGenerator'
+import {generateSpiralCoordinates} from '../utils/boardSpiralGenerator'
 import {shuffleArray} from '../utils/arrayHelpers'
 
 /**
@@ -75,7 +75,8 @@ export function createInitialGameState() {
                 available: 3
             }
         },
-
+        
+        //placeholder until implemented
         players: [
             createPlayer(0, 'Player', PLAYER_TYPES.HUMAN),
             createPlayer(1, 'AI', PLAYER_TYPES.AI)
