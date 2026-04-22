@@ -8,7 +8,7 @@ import {shuffleArray} from '../utils/arrayHelpers'
  * Random intial gem grids
  */
 
-function generateGemGrid() {
+export function generateGemGrid() {
     const size = GAME_CONFIG.BOARD_SIZE; // 5x5
 
     //empty 5x5 grid
